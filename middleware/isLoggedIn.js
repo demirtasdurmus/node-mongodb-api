@@ -33,6 +33,7 @@ module.exports = catchAsync(async (req, res, next) => {
 
     // grant access to protected routes and assign user to req.user
     req.user = currentUser;
+    // to access user data in html templates for ssr
     res.locals.user = currentUser;
 
     // jump to the next middleware

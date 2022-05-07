@@ -61,7 +61,7 @@ module.exports = (err, req, res, next) => {
             error.isOperational = false;
         };
 
-        // recreate the error object with the new data
+        // recreate the error object with the new arguments
         error = new AppError(error.statusCode, error.message, error.name, error.isOperational, error.stack);
     };
     // pass the error to the actual error handler middleware
