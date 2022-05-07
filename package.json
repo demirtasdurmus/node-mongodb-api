@@ -1,0 +1,31 @@
+{
+  "name": "node-mongodb-ssr",
+  "version": "1.0.0",
+  "description": "Node.js-MongoDb-SSR-Project",
+  "main": "index.js",
+  "scripts": {
+    "mongostart": "echo OOee1425 | sudo -S mongod --dbpath /opt/homebrew/var/mongodb",
+    "start": "nodemon index.js",
+    "mongostop": "mongo admin --eval 'db.shutdownServer()'"
+  },
+  "author": "Durmuş Demirtaş",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.27.2",
+    "bcryptjs": "^2.4.3",
+    "cookie-parser": "^1.4.6",
+    "dotenv": "^16.0.0",
+    "express": "^4.17.3",
+    "express-mongo-sanitize": "^2.2.0",
+    "express-rate-limit": "^6.4.0",
+    "helmet": "^5.0.2",
+    "hpp": "^0.2.3",
+    "http-status": "^1.5.1",
+    "jsonwebtoken": "^8.5.1",
+    "mongodb": "^4.5.0",
+    "mongoose": "^6.3.0",
+    "morgan": "^1.10.0",
+    "slugify": "^1.6.5",
+    "xss-clean": "^0.1.1"
+  }
+}
