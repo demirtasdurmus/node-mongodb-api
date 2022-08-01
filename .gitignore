@@ -1,4 +1,7 @@
-#env
+# dev
+/devData
+
+# env
 *.config.env
 
 # DS
