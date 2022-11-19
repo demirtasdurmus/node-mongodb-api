@@ -39,6 +39,7 @@ app.use(cookieParser());
 
 // parse incoming requests with JSON body payloads
 app.use(express.json({ limit: "10kb" }));
+app.use(express.urlencoded({ extended: true }))
 
 // sanitize data against noSQL query injection
 app.use(mongoSanitize());
