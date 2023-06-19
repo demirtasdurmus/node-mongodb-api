@@ -1,5 +1,5 @@
 # dev
-/devData
+/devData!
 
 # env
 *.config.env
